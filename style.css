@@ -38,6 +38,7 @@ p {
 .navigation-links {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 40px;
   justify-content: center;
 }
 
@@ -95,7 +96,6 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
-
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -103,4 +103,35 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #6c63ff;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+
+  .navigation-links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .navigation-links a {
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px 15px;
+  }
+
+  .yoga,
+  .yogurt,
+  .weather {
+    text-align: center;
+  }
 }
